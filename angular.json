@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "employee-app"
+  "defaultProject": "employee-app",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
