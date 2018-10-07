@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { DashboardEffects } from '../store/effects/dashboard.effect';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store<any>, private dashboardAction: DashboardEffects, private _router: Router) { }
 
   ngOnInit() {
+    debugger;
+    this.store.dispatch(this.dashboardAction.getDashboardData());
   }
 
 }
