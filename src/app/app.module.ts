@@ -38,14 +38,11 @@ import { metaReducers } from './store/reducers/roots';
     HttpClientModule,
     // BsDropdownModule.forRoot(),
   ],
-  providers: [{
-    provide: LocationStrategy,
-    useClass: HashLocationStrategy,
-  },
-  {
-    provide: ServiceConfig,
-    useValue: { apiUrl: '' }
-  },
+  providers: [
+    {
+      provide: ServiceConfig,
+      useValue: { apiUrl: '' }
+    },
   ],
   bootstrap: [AppComponent]
 })

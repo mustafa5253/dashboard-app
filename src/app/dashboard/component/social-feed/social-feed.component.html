@@ -1,16 +1,16 @@
 <div class="card">
-  <div class="card-header">{{socialFeeds?.title}}</div>
+  <div class="card-header">{{socialFeeds.title}}</div>
   <div class="card-body">
     <ul>
       <ng-container *ngFor="let item of socialFeeds?.data">
         <li>
-          <span class="user-avatar">
-            <img src="{{item.avatar}}" />
-          </span>
-          <span class="feed">
+          <div class="user_img">
+            <img src="{{item.avatar}}" class="img-circle img-responsive" alt="" />
+          </div>
+          <div class="feed">
             <h5>{{item.name}}</h5>
             <p>{{item.message}}</p>
-          </span>
+          </div>
         </li>
       </ng-container>
     </ul>

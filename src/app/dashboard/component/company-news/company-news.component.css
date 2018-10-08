@@ -1,0 +1,22 @@
+.card-body {
+  padding: 10px
+}
+ul {
+  padding-left: 20px;
+  font-weight: 700;
+}
+li {
+  font-size: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 7px;
+}
+li p {
+  text-align: right;
+  color: #ccc;
+  font-weight: normal;
+  margin: 0;
+}
+li:last-child {
+  border:0;
+}

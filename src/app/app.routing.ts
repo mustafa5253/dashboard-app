@@ -7,7 +7,7 @@ import { PageComponent } from './page.component';
 
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: 'pages/dashboard', pathMatch: 'full' },
   { path: 'dashboard', redirectTo: 'pages/dashboard', pathMatch: 'full' },
   {
     path: 'pages', component: PageComponent,

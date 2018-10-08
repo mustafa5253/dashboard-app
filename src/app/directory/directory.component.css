@@ -1,0 +1,36 @@
+.user_info {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.user_img {
+  max-width: 45px;
+  float: left;
+  margin-right: 20px;
+}
+.user_meta {
+ width: calc(100% - 70px);
+ display: inline-block;
+}
+.user_meta h5 {
+  color: #20a8d8;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.user_meta h6 {
+  font-size: 12px;
+}
+.user_summary >div {
+  margin-bottom: 10px;
+}
+.user_summary i {
+  margin-right: 20px;
+}
+.employee_card {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #ddd;
+}
+.user_summary {
+  font-size: 12px;
+}

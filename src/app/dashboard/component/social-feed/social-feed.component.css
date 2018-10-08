@@ -1,0 +1,33 @@
+.card-body {
+  padding: 10px
+}
+ul {
+  padding: 0px;
+  font-weight: 700;
+}
+li {
+  padding: 7px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  list-style: none;
+}
+li p {
+  font-weight: normal;
+  margin-bottom: 7px;
+}
+img {
+  max-width: 50px;
+}
+.feed {
+  width: calc(100% - 70px);
+  display: inline-block;
+ }
+ .user_img {
+  max-width: 50px;
+  float: left;
+  margin-right: 20px;
+}
+h5 {
+  font-size: 14px;
+    color: #20a8d8;
+}

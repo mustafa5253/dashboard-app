@@ -1,23 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900'); 
+
+body {
+  font-family: 'Lato', sans-serif;
+}
 .app-body .sidebar {
   height: 100%;
 }
-.user_info {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
+
+.card-header {
+  background: #587790;
+  color: #fff;
 }
-.user_img {
-  max-width: 50px;
-  float: left;
-  margin-right: 20px;
+app-layout-main {
+  width: 100%;
 }
-.user_meta {
- width: calc(100% - 70px);
- display: inline-block;
-}
-.user_summary >div {
-  margin-bottom: 10px;
-}
-.user_summary i {
-  margin-right: 20px;
+.card {
+  height: calc(100% - 1.5rem);
 }

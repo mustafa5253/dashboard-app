@@ -13,6 +13,7 @@ import { AppState } from '../store/reducers/roots';
 export class DashboardComponent implements OnInit {
 
   public dashboardData$: Observable<any> = of(null);
+  public hrData: object = {};
 
   constructor(private store: Store<AppState>, private dashboardAction: DashboardEffects, private _router: Router) {
     this.dashboardData$ = this.store.select(p => p.dashboard.dashboardData);
@@ -20,7 +21,7 @@ export class DashboardComponent implements OnInit {
 
   public ngOnInit() {
     this.dashboardData$.subscribe((res) => {
-      console.log(res);
+      this.hrData = res.widget2;
     });
     // this.store.dispatch(this.dashboardAction.getDashboardData());
   }

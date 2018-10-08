@@ -34,12 +34,6 @@ const initialState: DashboardState = {
         { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
         { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
         { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
       ],
     },
     'widget4': {
@@ -48,19 +42,16 @@ const initialState: DashboardState = {
         { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
         { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
         { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' },
-      ],
+        { 'name': 'All the Members inviting on weekly meeting', 'posted': '23-July-2018' }, ],
     },
     'widget5': {
       'title': 'Social/Culture Feed',
       'data': [
-        { 'name': '@CKR LAW', 'message': 'Hey did you just send the files to me?', 'posted': '8 min ago' },
+        { 'name': '@CKR LAW', 'message': 'Hey did you just send the files to me?', 'posted': '8 min ago', 'avatar': './assets/img/avatars/8.jpg' },
+        { 'name': '@CKR LAW', 'message': 'Hey did you just send the files to me?', 'posted': '8 min ago', 'avatar': './assets/img/avatars/8.jpg' },
+        { 'name': '@CKR LAW', 'message': 'Hey did you just send the files to me?', 'posted': '8 min ago', 'avatar': './assets/img/avatars/8.jpg' },
+        { 'name': '@CKR LAW', 'message': 'Hey did you just send the files to me?', 'posted': '8 min ago', 'avatar': './assets/img/avatars/8.jpg' },
+
       ],
     }
   }
