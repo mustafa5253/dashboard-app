@@ -6,6 +6,9 @@ import { DirectoryComponent } from './directory.component';
   imports: [
     CommonModule
   ],
-  declarations: [DirectoryComponent]
+  declarations: [DirectoryComponent],
+  exports: [
+    DirectoryComponent
+  ]
 })
 export class DirectoryModule { }

@@ -1,8 +1,8 @@
 <div class="card">
-  <div class="card-header">{{socialFeeds?.title}}</div>
+  <div class="card-header">{{companyNews?.title}}</div>
   <div class="card-body">
     <ul>
-      <ng-container *ngFor="let item of upcomingEvents?.data">
+      <ng-container *ngFor="let item of companyNews?.data">
         <li>
           {{ item.name }}
           <p>{{item.posted}}</p>

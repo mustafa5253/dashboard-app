@@ -1,19 +1,9 @@
-import {
-  ActionReducer,
-  ActionReducerMap,
-  createFeatureSelector,
-  createSelector,
-  MetaReducer
-} from '@ngrx/store';
-import { environment } from '../../../environments/environment';
+/*
+ * Reducers: this file contains boilerplate code to handle debugging
+ * in development mode, as well as integrate the store with HMR.
+ * Customize your own reducers in `root.ts`.
+ */
+// import { storeLogger } from 'ngrx-store-logger';
+import { AppState, reducers } from './roots';
 
-export interface State {
-
-}
-
-export const reducers: ActionReducerMap<State> = {
-
-};
-
-
-export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
+export { reducers, AppState } from './roots';

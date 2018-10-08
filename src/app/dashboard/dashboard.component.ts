@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { DashboardEffects } from '../store/effects/dashboard.effect';
 import { Router } from '@angular/router';
+import { Observable, of } from 'rxjs';
+import { AppState } from '../store/reducers/roots';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,11 +12,17 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private store: Store<any>, private dashboardAction: DashboardEffects, private _router: Router) { }
+  public dashboardData$: Observable<any> = of(null);
 
-  ngOnInit() {
-    debugger;
-    this.store.dispatch(this.dashboardAction.getDashboardData());
+  constructor(private store: Store<AppState>, private dashboardAction: DashboardEffects, private _router: Router) {
+    this.dashboardData$ = this.store.select(p => p.dashboard.dashboardData);
+  }
+
+  public ngOnInit() {
+    this.dashboardData$.subscribe((res) => {
+      console.log(res);
+    });
+    // this.store.dispatch(this.dashboardAction.getDashboardData());
   }
 
 }

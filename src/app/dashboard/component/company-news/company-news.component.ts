@@ -6,15 +6,14 @@ import { DashboardEffects } from '../../../store/effects/dashboard.effect';
 import { AppState } from '../../../store/reducers';
 
 @Component({
-  selector: 'app-social-feed',
-  templateUrl: './social-feed.component.html',
-  styleUrls: ['./social-feed.component.css']
+  selector: 'app-company-news',
+  templateUrl: './company-news.component.html',
+  styleUrls: ['./company-news.component.css']
 })
-export class SocialFeedComponent implements OnInit {
-
+export class CompanyNewsComponent implements OnInit {
 
   public dashboardData$: Observable<any> = of(null);
-  public socialFeeds: object = {};
+  public companyNews: object = {};
 
   constructor(private store: Store<AppState>, private dashboardAction: DashboardEffects, private _router: Router) {
     this.dashboardData$ = this.store.select(p => p.dashboard.dashboardData);
@@ -22,7 +21,7 @@ export class SocialFeedComponent implements OnInit {
 
   public ngOnInit() {
     this.dashboardData$.subscribe((res) => {
-      this.socialFeeds = res.widget5;
+      this.companyNews = res.widget3;
     });
   }
 

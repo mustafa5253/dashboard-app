@@ -6,13 +6,16 @@ import { UpcomingEventComponent } from './component/upcoming-event/upcoming-even
 import { DashboardRoutingModule } from './dashboard.routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardService } from '../services/dashboard.service';
+import { CompanyNewsComponent } from './component/company-news/company-news.component';
+import { DirectoryModule } from '../directory/directory.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    DirectoryModule
   ],
-  declarations: [EmployeeProfileComponent, SocialFeedComponent, UpcomingEventComponent, DashboardComponent],
+  declarations: [EmployeeProfileComponent, SocialFeedComponent, UpcomingEventComponent, DashboardComponent, CompanyNewsComponent],
   providers: [
     DashboardService
   ]

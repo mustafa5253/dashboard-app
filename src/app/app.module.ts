@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './store/reducers';
+import { reducers } from './store/reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { EffectsModule } from '@ngrx/effects';
@@ -17,6 +17,7 @@ import { ActionModule } from './store/effects/effect.module';
 import { ServiceModule } from './services/services.module';
 import { ServiceConfig } from './services/service.config';
 import { HttpClientModule } from '@angular/common/http';
+import { metaReducers } from './store/reducers/roots';
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ActionModule.forRoot(),
     ServiceModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
     // BsDropdownModule.forRoot(),
   ],
   providers: [{

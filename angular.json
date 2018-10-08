@@ -27,7 +27,8 @@
               "node_modules/@coreui/icons/css/coreui-icons.min.css",
               "node_modules/flag-icon-css/css/flag-icon.min.css",
               "node_modules/simple-line-icons/css/simple-line-icons.css",
-              "src/assets/css/style.min.css"
+              "src/assets/css/style.min.css",
+              "src/assets/css/style.css"
             ],
             "scripts": []
           },

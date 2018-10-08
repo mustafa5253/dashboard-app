@@ -23,7 +23,7 @@ export class DashboardService {
 */
   public GetAllWidgets(): Observable<any> {
     debugger;
-    return this._http.get('/fake-db/dashboard').pipe(map((res) => {
+    return this._http.get('./fake-db/dashboard').pipe(map((res) => {
       debugger;
       const data: any = res;
       data.queryString = {};

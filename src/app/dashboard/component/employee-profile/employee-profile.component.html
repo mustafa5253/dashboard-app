@@ -1,11 +1,37 @@
 <div class="card">
-  <div class="card-header">Employee Profile</div>
+  <div class="card-header">{{userProfile?.title}}</div>
   <div class="card-body">
-    <div class="user_img">
-      <img class="./assets/img/avatars/8.jpg">
+    <div class="user_info">
+      <div class="user_img">
+        <img src="{{userProfile?.data?.avatar}}" class="img-circle img-responsive" alt="{{userProfile?.data?.name}}" />
+      </div>
+      <div class="user_meta">
+        <h5>{{userProfile?.data?.name}}</h5>
+        <h6>
+          <b>{{userProfile?.data?.profession}}</b>
+        </h6>
+        <h6>
+          <b>{{userProfile?.data?.city}}</b>
+        </h6>
+      </div>
     </div>
-    <div class="user_meta">
-      <h4>Tsub</h4>
+    <div class="user_summary">
+      <div class="">
+        <i class="icon-envelope"></i>
+        <span>{{userProfile?.data?.email}}</span>
+      </div>
+      <div class="">
+        <i class="icon-phone"></i>
+        <span>{{userProfile?.data?.phone}}</span>
+      </div>
+      <div class="">
+        <i class="icon-mobile"></i>
+        <span>{{userProfile?.data?.address}}</span>
+      </div>
+    </div>
+    <br />
+    <div class="text-center">
+      <button class="btn btn-primary">Contact</button>
     </div>
   </div>
 </div>
