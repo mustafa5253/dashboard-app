@@ -22,10 +22,8 @@ export class DirectoryComponent implements OnInit {
 
   public ngOnInit() {
     this.directoryData$.subscribe((res) => {
-      console.log(res);
       this.directory = res;
     });
-    // this.store.dispatch(this.dashboardAction.getDashboardData());
   }
 
 }

@@ -57,8 +57,6 @@ export class DashboardEffects {
    * getDashboardData
    */
   public getDashboardData() {
-    debugger;
-    console.log('DashboardEffects.GET_DASHBOARD_WIDGETS');
     return {
       type: DashboardEffects.GET_DASHBOARD_WIDGETS,
     };
@@ -68,7 +66,6 @@ export class DashboardEffects {
    * getDashboardDataResponse
    */
   public getDashboardDataResponse(res) {
-    console.log('DashboardEffects.GET_DASHBOARD_WIDGETS_RESPONSE');
     return {
       type: DashboardEffects.GET_DASHBOARD_WIDGETS_RESPONSE,
       payload: res
