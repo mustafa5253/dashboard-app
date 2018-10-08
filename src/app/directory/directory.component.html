@@ -1,21 +1,21 @@
 <div class="card">
-  <div class="card-header">Card title</div>
-  <div class="card-body">
-    <ng-container>
+    <div class="card-header">Card title</div>
+    <div class="card-body">
+        <ng-container *ngFor="let emp of directory">
+            <div class="col-lg-3">
+                <div class="user_info">
+                    <div class="user_img">
+                        <img src="{{emp?.avatar}}">
+                    </div>
+                    <div class="user_meta">
+                        <h4>{{emp?.name}}</h4>
+                        <h6>{{emp?.profession}}</h6>
+                        <br />
+                        <h6>{{emp?.city}}</h6>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
 
-    </ng-container>
-    <div class="col-lg-3">
-      <div class="user_info">
-        <div class="user_img">
-          <img src="{{userProfile?.data?.avatar}}">
-        </div>
-        <div class="user_meta">
-          <h4>{{userProfile?.data?.name}}</h4>
-          <h6>{{userProfile?.data?.profession}}</h6>
-          <br />
-          <h6>{{userProfile?.data?.city}}</h6>
-        </div>
-      </div>
     </div>
-  </div>
 </div>

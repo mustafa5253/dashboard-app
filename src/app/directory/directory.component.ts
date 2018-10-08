@@ -4,6 +4,7 @@ import { DashboardEffects } from '../store/effects/dashboard.effect';
 import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { AppState } from '../store/reducers/roots';
+import { DirectoryState } from '../store/reducers/directory.reducer';
 
 @Component({
   selector: 'app-directory',
@@ -13,7 +14,7 @@ import { AppState } from '../store/reducers/roots';
 export class DirectoryComponent implements OnInit {
 
   public directoryData$: Observable<any> = of(null);
-  public directory: any[] = [];
+  public directory: DirectoryState[] = [];
 
   constructor(private store: Store<AppState>, private dashboardAction: DashboardEffects, private _router: Router) {
     this.directoryData$ = this.store.select(p => p.directory.directoryData);
@@ -22,6 +23,7 @@ export class DirectoryComponent implements OnInit {
   public ngOnInit() {
     this.directoryData$.subscribe((res) => {
       console.log(res);
+      this.directory = res;
     });
     // this.store.dispatch(this.dashboardAction.getDashboardData());
   }
